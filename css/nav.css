@@ -1,0 +1,116 @@
+#navbarCollapse {
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.nav-logos {
+    height: 3rem;
+}
+
+
+.navbar {
+
+    backdrop-filter: blur(15px) saturate(0.5) !important;
+    background-color: transparent !important;
+    background-image: linear-gradient(to top, #1d2020 -3px, rgba(255, 255, 255, 0));
+    /* -webkit-mask: linear-gradient(to bottom, #ffffff 5px, rgba(255, 255, 255, 0));
+    mask: linear-gradient(to bottom, #ffffff 5px, rgba(255, 255, 255, 0)); */
+}
+
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #feba00 !important;
+    border-bottom: 2px #feba00 !important;
+    transform: scale(1.05);
+
+
+}
+
+.nav-link {
+    font-size: 22px;
+    color: #ffffff !important;
+    
+}
+
+.about-dropdown {
+    left: 60px !important;
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: color .45s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out !important;
+
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 128% !important;
+    left: 0;
+    margin-top: 0.125rem;
+}
+
+
+.dropdown-menu {
+    background-color:  #272b2b!important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border: none !important;
+   
+}
+
+.dropdown-menu a {
+    background-color:  #272b2b!important;
+    color: #ffffff;
+}
+
+
+.dropdown-menu a:hover{
+    background-color:  rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    color: #feba00;
+    transition: color .2s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out !important;
+   
+}
+
+
+.dropdown-menu a:not( :hover ){ 
+
+    background-color:   rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    color: #ffffff;
+    transition: color .75s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out !important;
+
+
+ }
+
+
+.dropdown-menu.show {
+    display: block;
+    left: -10px;
+}
+
+
+.dropdown-toggle::after {
+    display: none !important;
+
+
+}
+
+
+
+
+.nav-logos:hover {
+    /* transform: rotate(10deg); */
+    transform: scale(1.2);
+  
+    
+}
+
+
+.nav-links{
+    
+}
+
+
+.nav-logos{
+
+}
+
