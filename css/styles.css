@@ -44,9 +44,24 @@
     background-size: cover; */
 }
 
+.discord-box {
+    background-color: #5c64f4;
+    color: #ffffff;
+}
+
+.twitter-box {
+    background-color: #1c9cf4;
+    color: #ffffff;
+}
+
+.owner-box{
+    background-color: #fe4815;
+    color: #ffffff;
+}
+
 
 .white-box { 
-    background-color: #ffffff;
+    
     border-radius: 13px;
     margin-left:auto;
     margin-right:auto;
@@ -56,8 +71,9 @@
 }
 
 .white-box:hover {
-    width: 55%;
-    box-shadow: 5px 5px black;
+    background-color: #ffffff;
+    color: #333333;
+    transform: scale(1.05);
 }
 
 
@@ -79,12 +95,12 @@
     font-family: 'Din-Pro-Medium';
 }
 
-
+/* 
 .discord-box:hover {
- background-color: #5c64f4;
- color: #ffffff;
+ background-color: #ffffff;
+ color: #333333;
  cursor: pointer;
- transform: scale(1.15);
+ transform: scale(1.05);
 }
 
 .twitter-box:hover {
@@ -99,7 +115,7 @@
     color: #ffffff;
     cursor: pointer;
     transform: scale(1.15);
-}
+} */
 
 
 
@@ -182,10 +198,19 @@
 .analytics-buttons{
     background-color: #fc4414;
     border-radius: 28px;
-
+    cursor: pointer;
     padding-top: 10px;
     padding-bottom: 10px;
     font-family: 'Din-Pro-Black';
+}
+
+.coming-soon{
+    background-color: grey !important;
+    cursor: not-allowed !important;
+}
+
+.hidden {
+    display: none;
 }
 
 .hell-btns {
