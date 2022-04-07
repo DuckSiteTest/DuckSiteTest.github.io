@@ -204,6 +204,16 @@
     font-family: 'Din-Pro-Black';
 }
 
+footer {
+    font-family: 'Din-Pro-Medium';
+}
+
+.all-rights-reserved p{
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+
 .coming-soon{
     background-color: grey !important;
     cursor: not-allowed !important;
@@ -561,6 +571,7 @@ margin-left: 17px;
 }
 .fame-imgs p {
     text-align: center;
+    font-family: 'Din-Pro-Medium';
 }
 
 
@@ -943,6 +954,31 @@ html, body {
     left: 95px ;
 }
 
+
+.h1-header {
+    font-family: 'Din-Pro-Black';
+    font-size: 75px !important;
+}
+
+
+#hall-of-fame {
+   background-image: url("../images/Backgrounds/HallOfFameBackground.png");
+}
+
+.no-decor {
+    text-decoration: none!important;
+    color: #ffffff;
+}
+
+.no-decor:hover {
+    text-decoration: none!important;
+    color: #ffffff;
+}
+
+.hall-of-fame-img:hover {
+    transform: scale(1.05);
+}
+
  
 
 
@@ -983,7 +1019,7 @@ html, body {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .first-nav{
-        padding-left: 96px;
+        padding-left: 72px !important;
     }
     
     .title h1 {
