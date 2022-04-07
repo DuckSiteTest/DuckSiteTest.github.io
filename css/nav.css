@@ -1,3 +1,9 @@
+.nav-item a {
+    font-family: 'Din-Pro-Black';
+    text-transform: uppercase;
+}
+
+
 #navbarCollapse {
     justify-content: space-between;
     font-weight: bold;

@@ -1,3 +1,24 @@
+/* custom fonts */
+
+@font-face {
+    font-family: "Din-Pro-Black";
+    src: url("../fonts/DINPro-Black.otf")
+    }
+
+
+@font-face {
+    font-family: "Din-Pro-Medium";
+    src: url("../fonts/DINPro-Medium.otf")
+    }
+
+    @font-face {
+        font-family: "Din-Pro-Cond-Black-Ital";
+        src: url("../fonts/DINPro-CondBlackIta.otf")
+        }
+
+
+    
+
 /* title section */
 .title{
     text-align: center;
@@ -43,6 +64,7 @@
 .white-box-header{
     font-size: 28px;
     font-weight: bold;
+    font-family: 'Din-Pro-Black';
 }
 
 .white-box-subhead {
@@ -50,6 +72,11 @@
     font-weight: bold;
     position: relative;
     top: -10px;
+    font-family: 'Din-Pro-Black';
+}
+
+.max-supply{
+    font-family: 'Din-Pro-Medium';
 }
 
 
@@ -110,6 +137,8 @@
 .white-headers {
     font-size: 25px;
     line-height: 28px;
+    font-family: 'Din-Pro-Black';
+    padding-top: 15px;
 } 
 
 
@@ -140,9 +169,10 @@
 
 .NCD-title-section h1{
     font-size: 75px;
-    font-style: italic;
+    /* font-style: italic; */
     padding-top: 30px;
     line-height: 72px;
+    font-family: 'Din-Pro-Cond-Black-Ital';
 }
 
 .three-button-row {
@@ -155,6 +185,7 @@
 
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family: 'Din-Pro-Black';
 }
 
 .hell-btns {
@@ -182,15 +213,16 @@
 
 
 .NCD-paragraph {
-
     text-align: left;
     margin-bottom: 3rem;
+    font-family: 'Din-Pro-Medium';
 
 
 }
 
 .title-subhead{
     font-size: 25px;
+    font-family: 'Din-Pro-Medium';
 }
 
 .carousel-row {
@@ -200,6 +232,7 @@
 
 .title-subhead-unique{    
     text-shadow: 3px 3px black;
+    font-family: 'Din-Pro-Black';
 }
 
 
