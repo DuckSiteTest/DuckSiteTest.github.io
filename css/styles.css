@@ -192,6 +192,14 @@
     font-family: 'Din-Pro-Cond-Black-Ital';
 }
 
+
+.quote-div{
+    
+    background-color: #616161;
+    padding: 23px;
+    border-radius: 25px;
+}
+
 .three-button-row {
     text-align: center;
     color: red;}
