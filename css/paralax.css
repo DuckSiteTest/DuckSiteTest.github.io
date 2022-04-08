@@ -100,6 +100,25 @@ section img {
 }
 
 
+
+
+
+.parallax-duckJousting {
+    /* The image used */
+
+ background-image: url("/images/Paralax/DuckJousting.png");
+ /* Set a specific height */
+ min-height: 500px; 
+ height: 500px;
+ max-height: 500px;
+
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
 .parallax-duckRaces {
     /* The image used */
 

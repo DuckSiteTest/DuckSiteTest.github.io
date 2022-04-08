@@ -412,7 +412,6 @@ a {
 /* ABOUT PAGE  */
 
 
-
 .about-container {
     padding-top: 100px;
     background-color: black;
@@ -424,11 +423,12 @@ a {
     text-align: center;
 }
 
+.duck-jousting{
+    padding-top: 50px;
+}
 
 .about-card-container a div {
-    text-align: center;
-    position: relative;
-    left: 189px;
+    margin: auto;
 }
 
 .about-container h1 {
@@ -596,7 +596,7 @@ margin-left: 17px;
 }
 
 .lore-imgs {
-    padding-bottom: 25px;
+    padding-bottom: 50px;
 }
 
 
