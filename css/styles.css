@@ -124,6 +124,10 @@ body {
 }
 
 /* h1 of text section  */
+.NCD-title-section {
+	text-align: left;
+}
+
 .NCD-title-section h1{
     font-size: calc(3.175rem + 1.5vw);
     font-family: 'Din-Pro-Cond-Black-Ital';
@@ -138,7 +142,6 @@ body {
 /* subhead of text section  */
 .title-subhead {
 	font-size: calc(.70rem + 1.5vw);
-	
 }
 
 /* paragraph of text section  */
@@ -257,7 +260,6 @@ body {
 
 /* carousel images  */
 
-
 .slideshow-image {
 	width: 90%;
 	/* sisi says dis */
@@ -280,7 +282,7 @@ body {
 }
 
 .duck-img:hover {
-	transform: scale(1.2);
+	transform: scale(1.05);
 	transition:  transform .2s ease-in-out;
 }
 
@@ -295,11 +297,6 @@ body {
 
 
 
-
-
-.NCD-title-section {
-	text-align: left;
-}
 
 
 
