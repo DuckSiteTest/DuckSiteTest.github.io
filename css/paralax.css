@@ -146,7 +146,7 @@ section img {
 
 .parallax-2ndGen {
 	/* The image used */
-	background-image: url("/images/Paralax/Upside_Duck_Portal.jpg");
+	/* background-image: url("/images/Paralax/Upside_Duck_Portal.jpg"); */
 	background-image: url("/images/Paralax/Background-Pond.png");
 	/* Set a specific height */
 	min-height: 500px;
