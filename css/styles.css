@@ -116,6 +116,13 @@ body {
 }
 
 
+/* text section container */
+.NCD-section {
+	background-color: black;
+	background-size: cover;
+	color: #ffffff;
+}
+
 /* h1 of text section  */
 .NCD-title-section h1{
     font-size: calc(3.175rem + 1.5vw);
@@ -248,11 +255,51 @@ body {
 /* buttons of text section - End */
 
 
+/* carousel images  */
+
+
+.slideshow-image {
+	width: 90%;
+	/* sisi says dis */
+	border-radius: 7px;
+	-webkit-transition: all ease .75s;
+	-moz-transition: all ease .75s;
+	transition: all ease .75s;
+}
+
+.slideshow-image:hover {
+	transform: scale(1.1);
+	transition:  transform .2s ease-in-out;
+}
+
+.duck-img {
+	width: 80%;
+	-webkit-transition: all ease .75s;
+	-moz-transition: all ease .75s;
+	transition: all ease .75s;
+}
+
+.duck-img:hover {
+	transform: scale(1.2);
+	transition:  transform .2s ease-in-out;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+.NCD-title-section {
+	text-align: left;
+}
 
 
 
@@ -298,9 +345,6 @@ body {
 	background-size: cover;
 }
 
-.duck-img {
-	width: 80%;
-}
 
 .darkest-bg {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
@@ -323,27 +367,8 @@ body {
 }
 
 
-/* NCD section */
 
-.NCD-section {
-	background-color: black;
-	background-size: cover;
-	color: #ffffff;
-}
 
-.slideshow-image {
-	width: 90%;
-	/* sisi says dis */
-	border-radius: 5px;
-}
-
-.slideshow-image:hover {
-	transform: scale(1.1);
-}
-
-.NCD-title-section {
-	text-align: left;
-}
 
 
 
