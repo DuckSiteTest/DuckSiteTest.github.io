@@ -23,6 +23,7 @@ h1 {
 	font-family: 'Din-Pro-Cond-Black-Ital';
 	color: #feba00;
 	font-size: calc(3.375rem + 1.5vw)!important;
+	text-transform: uppercase;
 
 }
 
@@ -445,6 +446,91 @@ h1 {
 
 
 
+/* experimental  */
+
+
+/* experimental  */
+
+.carousel {
+
+	top: -55px;
+}
+
+.carousel-inner {
+   
+    overflow: visible !important;
+}
+
+
+.carousel p {
+	font-size: 1.2rem;
+}
+
+.carousel-row {
+	padding-top: 2rem;
+}
+
+.carousel-item{
+	opacity: 0;
+	transition: transform 1.6s ease-in-out !important;
+	box-shadow: #feba00 0px 0px 39px;
+}
+
+.active { 
+	opacity: 1;
+	transition: transform 1.6s ease-in-out !important; 
+}
+.carousel-control-next-icon:hover {
+	transform: scale(1.15);
+}
+
+.carousel-control-prev-icon:hover {
+	transform: scale(1.15);
+}
+
+
+.quote-div {
+	background-color: #616161;
+	padding: 2rem;
+	border-radius: 25px;
+	min-height: 40rem;
+
+}
+
+
+
+.carousel-inner {
+	width: 56% !important;
+	margin: auto !important;
+}
+
+
+
+
+.PFPText {
+	margin: auto;
+    font-size: 1.5rem !important;
+    margin-top: 3rem;
+    color: #feba00;
+	text-decoration: underline;
+	float: right;
+	white-space: nowrap;
+}
+
+.offset-1-right{
+	margin-right: 8.3333%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -487,11 +573,7 @@ h1 {
 
 
 
-.quote-div {
-	background-color: #616161;
-	padding: 23px;
-	border-radius: 25px;
-}
+
 
 
 
@@ -522,9 +604,6 @@ footer {
 
 
 
-.carousel-row {
-	padding-top: 25px;
-}
 
 
 
@@ -713,21 +792,7 @@ footer div p {
 
 
 
-.BFPFP {
-	width: 100px;
-	position: relative;
-	top: -13px;
-	left: 268px;
-}
 
-.PFPText {
-	color: #feba00;
-	text-decoration: underline;
-	position: relative;
-	top: -75px;
-	left: 130px;
-	font-size: 25px;
-}
 
 
 
@@ -752,46 +817,13 @@ footer div p {
 	font-size: 29px;
 }
 
-.carousel-control-next-icon:hover {
-	transform: scale(1.15);
-}
 
-.carousel-control-prev-icon:hover {
-	transform: scale(1.15);
-}
 
 .nav-links {
 	position: relative;
 	left: 40px;
 }
 
-
-.carousel-inner {
-	width: 56% !important;
-	margin: auto !important;
-}
-
-.brand-values-container {
-	height: 100vh !important;
-}
-
-.carousel {
-	height: 46vh;
-	top: -55px;
-}
-
-.carousel p {
-	font-size: 20px;
-}
-
-.quote-pfp-div {
-	position: relative;
-	left: 57%;
-}
-
-.PFPJohn {
-	left: 95px;
-}
 
 
 
@@ -848,8 +880,6 @@ footer div p {
 /* Small devices (landscape phones, 544px and up) */
 
 @media (max-width: 543px) {
-
-  
 
 
     .NCD-title-section h1, p {
@@ -947,36 +977,12 @@ footer div p {
 	.lore-imgs p {
 		width: auto !important;
 	}
+
+
 	.reverse {
 		flex-direction: column-reverse !important;
 	}
-	.carousel p {
-		font-size: 11px !important;
-	}
-	.quote-pfp-div {
-		position: relative;
-		left: -42% !important;
-	}
-	.PFPText {
-		color: #feba00;
-		text-decoration: underline;
-		position: relative;
-		top: -75px;
-		left: 181px !important;
-	}
-	.PFPJohn {
-		left: 159px !important;
-	}
-	.utility-img {
-		height: auto;
-		width: 321px !important;
-	}
-	.utility-card-container p {
-		width: 300px !important;
-		margin: auto;
-		padding-bottom: 25px;
-    }
-    
+
 
 
     /* Remove First Section Index  */
@@ -994,11 +1000,20 @@ footer div p {
         object-fit: cover;
         max-height: 210px;
         min-height: 210px;
-    }
+	}
+	
+	.quote-pfp-div{
+		text-align: center;
+	}
 
-
-   
-
+	.PFPText {
+	margin: none; 
+    font-size: 1.5rem !important;
+     margin-top: 0;
+    color: #feba00;
+    text-decoration: underline;
+     float: none;
+	}
 }
 
 @media (min-width: 544px) {
@@ -1010,6 +1025,28 @@ footer div p {
 }
 
 @media (max-width: 768px) {
+
+
+
+	.quote-pfp-div {
+		text-align: center;
+	}
+
+	.offset-1-right {
+		margin-right: 22.3333%;
+	}
+
+	.quote-div {
+		font-size: 1rem;
+		padding: 1rem;
+		overflow: scroll;
+		max-height: 25rem;
+	}
+
+	.carousel-inner {
+		width: 75% !important;
+		margin: auto !important;
+	}
 
 }
 

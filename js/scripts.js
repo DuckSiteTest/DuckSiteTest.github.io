@@ -141,20 +141,12 @@ window.addEventListener('load', function () {
 		};
 
 
-		// $('.touchMeNot').on('click' , function(){
-		// 	$('.touchMeNot').css('display', "none");
-		// 	alert("you win this round...")
-		// })
-
 		$('.touchMeNotImg').on('click' , function(){
 			$('.touchMeNot').css('display', "none");
 			alert("you win this round...")
 		})
 
-		
-		
-		
-		
+	
 		
 
 	} else if (document.body.classList.contains("BrandValuesPage"))
