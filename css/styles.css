@@ -76,23 +76,27 @@ h1 {
 	margin-right: auto;
 	box-shadow: 3px 3px 9px black;
 	min-width: fit-content;
-    margin: auto;
+	margin: auto;
+	font-family: "Din-Pro-Black";
+	font-size: 1.7rem;
 }
 
 .discord-box {
 	background-color: #5c64f4;
 	border: 2px solid #5c64f4;
 	color: #ffffff;
+	text-shadow: 1px 1px 3px black;
 	-webkit-transition: all ease 1s;
 	-moz-transition: all ease 1s;
 	transition: all ease 1s;
 }
 
 .discord-box:hover {
-	color: #333333;
+	color: #5c64f4;
 	background-color: #ffffff;
     transform: translate(0px, -7px);
 	box-shadow: 0 0 10PX #5c64f4;
+	text-shadow: 1px 1px 3px black;
     transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
 }
 
@@ -104,14 +108,16 @@ h1 {
 	-webkit-transition: all ease 1s;
 	-moz-transition: all ease 1s;
 	transition: all ease 1s;
+	text-shadow: 1px 1px 3px black;
 }
 
 .twitter-box:hover {
-	color: #333333;
+	color: #1c9cf4;
 	background-color: #ffffff;
     transform: translate(0px, -7px);
 	box-shadow: 0 0 10PX #1c9cf4;
-    transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
+	transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
+	text-shadow: 1px 1px 3px black;
 }
 
 
@@ -119,17 +125,19 @@ h1 {
 	background-color: #fe4815;
 	border: 2px solid #fe4815;
 	color: #ffffff;
+	text-shadow: 1px 1px 3px black;
 	-webkit-transition: all ease 1s;
 	-moz-transition: all ease 1s;
 	transition: all ease 1s;
 }
 
 .owner-box:hover {
-	color: #333333;
+	color: #fe4815;
 	background-color: #ffffff;
     /* transform: translate(0px, -7px); */
 	box-shadow: 0 0 10PX #fe4815;
-    transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
+	transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
+	text-shadow: 1px 1px 3px black;
 }
 
 
@@ -421,15 +429,15 @@ h1 {
 .touchMeNot{
     position:fixed;
    font-size: 5rem;
-    height:100px;
-	width:100px;
+    height:200px;
+	width:200px;
 	z-index: 999999;
 }
 
 .touchMeNot img{
 
-    height:100px;
-	width:100px;
+    height:200px;
+	width:200px;
 	z-index: 999999;
 }
 

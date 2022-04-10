@@ -84,10 +84,19 @@ window.addEventListener('load', function () {
 
 		$('.coming-soon-button').on("mouseover", function () {
 			
+			if(!this.classList.contains("hovered")){
+			this.classList.add("hovered");
+			this.innerText = 'COMING SOON';
+			}
+		});
+
+
+		$('.coming-soon-button').on("click", function () {
+			
 
 			if(!this.classList.contains("visited")){
 				this.classList.add("visited");
-				this.innerText = 'COMING SOON';
+				this.innerText = 'COMING SOON...';
 			} else if(this.classList.contains("visited") && !this.classList.contains("visited-again")){
 				this.classList.add("visited-again");
 				this.innerText = 'Patience...';
@@ -132,10 +141,17 @@ window.addEventListener('load', function () {
 		};
 
 
-		$('.touchMeNot').on('click' , function(){
+		// $('.touchMeNot').on('click' , function(){
+		// 	$('.touchMeNot').css('display', "none");
+		// 	alert("you win this round...")
+		// })
+
+		$('.touchMeNotImg').on('click' , function(){
 			$('.touchMeNot').css('display', "none");
 			alert("you win this round...")
 		})
+
+		
 		
 		
 		
