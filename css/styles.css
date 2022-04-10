@@ -19,6 +19,25 @@ body {
     position: relative
 }
 
+h1 {
+	font-family: 'Din-Pro-Cond-Black-Ital';
+	color: #feba00;
+	font-size: calc(3.375rem + 1.5vw)!important;
+
+}
+
+.header > h1 {
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+
+
+
+.contain-fliud  { 
+	text-align: center;
+}
+
 /* inner container for margin */
 .inner {
     margin-left: 5%; 
@@ -43,8 +62,6 @@ body {
 .title-container {
 	background-image: linear-gradient(#2a9eb6 -50%, #002145);
 }
-
-
 
 
 /* 3 main buttons  */
@@ -255,6 +272,14 @@ body {
 	box-shadow: 0 0 10PX black !important;
 }
 
+
+.coming-soon-button:hover{
+	transform: translate(0px, 7px) !important;
+	box-shadow: 0 0 10PX black !important;
+	cursor: not-allowed !important;
+
+}
+
 /* buttons of text section - End */
 
 
@@ -288,47 +313,132 @@ body {
 
 
 
+/* --------   About and Utility Page  --------- */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.white-box-header {
-	font-size: 28px;
-	font-weight: bold;
-	font-family: 'Din-Pro-Black';
+.about-container {
+	padding-top: 7rem;
+	background-color: black;
+	color: #ffffff;
+	text-transform: capitalize;
 }
 
-.white-box-subhead {
-	font-size: 22px;
-	font-weight: bold;
-	position: relative;
-	top: -10px;
-	font-family: 'Din-Pro-Black';
+.about-row{
+	justify-content: space-evenly;
 }
+
+.about-card-container {
+	text-align: center;
+}
+
+.about-card-container > h2 {
+	font-family: "Din-Pro-Black";
+	margin-bottom: 1rem;
+	white-space: nowrap;
+}
+
+.about-card-container a div {
+	margin: auto;
+}
+
+.about-buttons {
+	border-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+	max-width: 250px;
+	text-align: center;
+	color: white;
+	background-color: #feba00;
+	border: 2px solid #feba00;
+	font-size: 1.25rem;
+	font-weight: bold;
+	-webkit-transition: all ease 1s;
+	-moz-transition: all ease 1s;
+	transition: all ease 1s;
+}
+
+.about-buttons:hover {
+	color: black;
+	background-color: white;
+	transform: translate(0px, -7px);
+	/* transform: scale(1.05); */
+	box-shadow: 0 0 20PX #feba00;
+    transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
+}
+
+
+.about-img {
+	height: auto;
+	width: 100%;
+	border-radius: 20px;
+	margin-bottom: 2rem;
+	-webkit-transition: all ease 1s;
+	-moz-transition: all ease 1s;
+	transition: all ease 1s;
+}
+
+.about-img:hover {
+	transform: scale(1.05);
+	box-shadow: #feba00 0px 0px 39px;
+	transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
+}
+
+.visited {
+	background-color: grey !important;
+	-webkit-transition: all ease 1s;
+	-moz-transition: all ease 1s;
+	transition: all ease 1s;
+
+}
+
+
+.visited-again {
+	
+	-webkit-transition: all ease 1s;
+	-moz-transition: all ease 1s;
+	transition: all ease 1s;
+
+}
+
+
+.warning {
+	
+	-webkit-transition: all ease 1s;
+	-moz-transition: all ease 1s;
+	transition: all ease 1s;
+
+}
+
+.done{
+
+	-webkit-transition: all ease 1s;
+	-moz-transition: all ease 1s;
+	transition: all ease 1s;
+}
+
+
+.touchMeNot{
+    position:fixed;
+   font-size: 5rem;
+    height:100px;
+	width:100px;
+	z-index: 999999;
+}
+
+.touchMeNot img{
+
+    height:100px;
+	width:100px;
+	z-index: 999999;
+}
+
+
+
+
+
+
+
 
 .max-supply {
 	font-family: 'Din-Pro-Medium';
@@ -480,109 +590,13 @@ a {
 }
 
 
-/* utility page  */
-
-.utility-img {
-	height: auto;
-	width: 450px;
-	margin-bottom: 40px;
-	border-radius: 25px;
-}
-
-.utility-row h3 {
-	text-align: center;
-}
-
-.utililty-buttons {
-	border-radius: 8px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 40px;
-	width: 250px;
-	text-align: center;
-	color: white;
-	background-color: #feba00;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.utililty-buttons:hover {
-	color: black;
-	background-color: white;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.utility-container h1 {
-	color: #feba00;
-	font-size: 50px;
-	font-weight: bold;
-}
-
-.utility-card-container a div {
-	text-align: center;
-	position: relative;
-	left: 78px;
-}
 
 
-/* ABOUT PAGE  */
 
-.about-container {
-	padding-top: 100px;
-	background-color: black;
-	color: #ffffff;
-	text-transform: capitalize;
-}
 
-.about-card-container {
-	text-align: center;
-}
 
-.duck-jousting {
-	padding-top: 50px;
-}
 
-.about-card-container a div {
-	margin: auto;
-}
 
-.about-container h1 {
-	color: #feba00;
-	font-size: 50px;
-	font-weight: bold;
-}
-
-.about-buttons {
-	border-radius: 8px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-top: 10px;
-	width: 250px;
-	text-align: center;
-	color: white;
-	background-color: #feba00;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.about-row h3 {
-	text-align: center;
-}
-
-.about-img {
-	height: auto;
-	width: 450px;
-	border-radius: 20px;
-	margin-bottom: 40px;
-}
-
-.about-buttons:hover {
-	color: black;
-	background-color: white;
-	font-size: 20px;
-	font-weight: bold;
-}
 
 footer {
 	background-color: black;
@@ -597,20 +611,7 @@ footer div p {
 	padding-bottom: 50px;
 }
 
-.utility-card-container {
-	text-align: center;
-}
 
-
-/* 
-Utility Page  */
-
-.utility-container {
-	padding-top: 100px;
-	background-color: black;
-	color: #ffffff;
-	text-transform: capitalize;
-}
 
 .color-text {
 	color: #feba00;
@@ -702,14 +703,7 @@ Utility Page  */
 	box-shadow: #feba00 0px 0px 39px;
 }
 
-.about-img:hover {
-	transform: scale(1.02);
-	box-shadow: #feba00 0px 0px 39px;
-}
 
-.about-buttons:hover {
-	transform: scale(1.05);
-}
 
 .BFPFP {
 	width: 100px;
@@ -732,10 +726,6 @@ Utility Page  */
 
 
 
-.utility-card-container p {
-	width: 374px;
-	margin: auto;
-}
 
 .email-link {
 	color: #feba00;
@@ -795,10 +785,7 @@ Utility Page  */
 	left: 95px;
 }
 
-.h1-header {
-	font-family: 'Din-Pro-Black';
-	font-size: 75px !important;
-}
+
 
 #hall-of-fame {
 	background-image: url("../images/Backgrounds/HallOfFameBackground.png");
