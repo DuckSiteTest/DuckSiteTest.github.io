@@ -954,12 +954,8 @@ footer div p {
 	}
 	/* ABOUT PAGE MOBILE - END */
 	/* COMMUNITY - START  */
-	.community-container {
-		width: 340px !important;
-	}
-	.community-container p {
-		font-size: 17px !important;
-	}
+	
+	
 	.back-btn {
 		top: -30px;
 		position: relative;
