@@ -1019,6 +1019,23 @@ footer div p {
     text-decoration: underline;
      float: none;
 	}
+
+	#mobileBrandValuesSection{
+		display: block !important;
+	}
+
+	#carouselExampleIndicators{
+		display: none;
+	}
+
+	.p-t-0 {
+		padding-top: 0 !important;
+	}
+
+	.valuePContainer{
+		
+		border-bottom: 5rem solid #FEBA00;
+	}
 }
 
 @media (min-width: 544px) {
