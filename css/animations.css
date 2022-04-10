@@ -351,7 +351,7 @@
 @media (max-width: 543px) {
 	.scrolled.right-to-left {
 		position: relative;
-		animation: rightToLeft 1s;
+		animation: rightToLeft .5s;
 		animation-name: rightToLeft;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
@@ -360,7 +360,7 @@
 	
 	.scrolled.left-to-right {
 		position: relative;
-		animation: leftToRight 1s;
+		animation: leftToRight .5s;
 		animation-name: leftToRight;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
