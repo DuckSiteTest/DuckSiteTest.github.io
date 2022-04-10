@@ -346,3 +346,25 @@
 	/* trick browser into using GPU for performance; using 3d animation even though we're just translating 2D*/
 	transform: translate3d(0, 0, 0)
 }
+
+
+@media (max-width: 543px) {
+	.scrolled.right-to-left {
+		position: relative;
+		animation: rightToLeft 1s;
+		animation-name: rightToLeft;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+	
+	.scrolled.left-to-right {
+		position: relative;
+		animation: leftToRight 1s;
+		animation-name: leftToRight;
+		animation-iteration-count: 1;
+		animation-timing-function: linear;
+		animation-fill-mode: forwards;
+	}
+
+}

@@ -164,11 +164,11 @@ h1 {
 	text-align: left;
 }
 
-.NCD-title-section h1{
-    font-size: calc(3.175rem + 1.5vw);
+.NCD-title-section h1{ 
+    font-size: calc(3.175rem + 1.5vw) !important;
     font-family: 'Din-Pro-Cond-Black-Ital';
     margin-top: 1.5rem;
-    line-height: calc(3.375rem + 1.5vw);
+    line-height: calc(3.375rem + 1.5vw) ;
 } 
 
 .NCD-title-section p {
@@ -791,7 +791,10 @@ footer div p {
 .utility-img:hover {
 	transform: scale(1.02);
 	box-shadow: #feba00 0px 0px 39px;
+	transition: all 1s ease-in-out;
 }
+
+
 
 
 
@@ -846,6 +849,12 @@ footer div p {
 
 .hall-of-fame-img:hover {
 	transform: scale(1.05);
+	transition: all .75s ease-in-out;
+}
+
+.hall-of-fame-img {
+	
+	transition: all .75s ease-in-out;
 }
 
 
@@ -862,19 +871,15 @@ footer div p {
 		font-size: 1rem;
 		top: -20px;
 	}
-	.white-box-header {
-		font-size: 24px;
-	}
+
 	.desktopBr {
 		display: none;
 	}
 	.analytics-buttons {
-		width: 300px;
+		width: 250px;
 		margin: auto;
 	}
-	.white-box {
-		width: 80% !important;
-	}
+	
 	.reverse-column {
 		flex-direction: column-reverse;
 	}
@@ -883,6 +888,7 @@ footer div p {
 /* Small devices (landscape phones, 544px and up) */
 
 @media (max-width: 543px) {
+
 
 
     .NCD-title-section h1, p {
