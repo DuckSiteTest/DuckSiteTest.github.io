@@ -32,6 +32,16 @@ h1 {
 	margin-bottom: 2.5rem;
 }
 
+.community > h2 {
+	font-family: "Din-Pro-Black";
+	color: #feba00;
+	font-size: calc(1.0rem + 1.5vw)!important;
+}
+
+.community > p {
+	font-family: "Din-Pro-Medium";
+}
+
 
 
 
@@ -444,17 +454,41 @@ h1 {
 
 
 
+/* Community Page  */
 
+.community-container {
+	text-align: center;
+	margin: auto;
 
-/* experimental  */
-
-
-/* experimental  */
-
-.carousel {
-
-	top: -55px;
 }
+.community-container p {
+	text-align: center;
+	font-size: 1.2rem;
+}
+.last-p{
+	margin-bottom: 0;
+}
+
+
+
+
+.community img {
+	max-width: 70%;
+	margin-bottom: 25px !important;
+	border-radius: 25px;
+	margin: auto;
+}
+
+
+
+
+
+/* experimental  */
+
+
+/* experimental  */
+
+
 
 .carousel-inner {
    
@@ -721,45 +755,14 @@ footer div p {
 	position: relative;
 	top: -112px;
 	margin-left: 17px;
+	float: left;
 }
 
-.community img {
-	width: 100%;
-	margin-bottom: 25px !important;
-	border-radius: 25px;
-	margin: auto;
-}
 
-.community-container {
-	text-align: center;
-	width: 900px;
-	margin: auto;
-}
 
-.community-container p {
-	text-align: center;
-	font-size: 24px;
-}
 
-.last-p {
-	margin-bottom: 0;
-}
 
-.community h2 {
-	color: #feba00;
-	font-weight: bold;
-}
 
-.duck-races {
-	padding-bottom: 100px;
-	padding-top: 50px;
-}
-
-.first-p {
-	font-size: 28px !important;
-	padding-bottom: 25px;
-	margin-top: -61px;
-}
 
 .fame-imgs img {
 	width: 300px;
