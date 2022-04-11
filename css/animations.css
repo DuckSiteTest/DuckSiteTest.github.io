@@ -53,6 +53,19 @@
 	}
 }
 
+
+@-webkit-keyframes leftToRight {
+  
+	0% {
+		-webkit-left: -100px;
+		-webkit-opacity: .05;
+	}
+	100% {
+		-webkit-left: 0px;
+		-webkit-opacity: 1;
+	}
+}
+
 @keyframes leftToRight {
 	0% {
 		left: -100px;
