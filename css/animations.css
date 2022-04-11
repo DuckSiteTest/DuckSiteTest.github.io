@@ -15,14 +15,17 @@
 @keyframes skyLoadIn{
 	0% {
 		opacity: 0;
+		top: -100px;
 	}
 
 	75%{
 		opacity: .5;
+	
 	}
 
 	100% {
 		opacity: 1;
+		top: 0px;
 	}
 
 }
@@ -316,7 +319,7 @@
 	animation-duration: 3s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;
-	animation-delay: 0s;
+	animation-delay: .5s;
 }
 
 .smallToBig {
@@ -325,7 +328,7 @@
 	animation-duration: 3s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;
-	animation-delay: 0s;
+	animation-delay: .5s;
 }
 
 
