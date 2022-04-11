@@ -1,4 +1,16 @@
 
+@keyframes smallToBig{
+	0% {
+		transform: scale(0);
+	}
+
+	
+
+	100% {
+		transform: scale(1.2);
+	}
+
+}
 
 @keyframes skyLoadIn{
 	0% {
@@ -301,7 +313,16 @@
 .skyLoadIn{
 	animation: skyLoadIn;
 	animation-name: skyLoadIn;
-	animation-duration: 2s;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+}
+
+.smallToBig {
+	animation: smallToBig;
+	animation-name: smallToBig;
+	animation-duration: 3s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;
 	animation-delay: 0s;
