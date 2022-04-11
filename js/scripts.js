@@ -30,9 +30,9 @@ window.addEventListener('load', function () {
 			} else if (screenWidth <= 545 ) {
 			
 				bg.style.top = -value * .05 + 'px';
-				moon.style.left = value * 1.5 + 'px';
-				moon.style.top = value * 1.5 + 'px';
-				title.style.top = value+ 110 + 'px';
+				moon.style.left = value * 1 - 199 + 'px';
+				moon.style.top = value * 1.5 - 69 + 'px';
+				title.style.top = value + 110 + 'px';
 				// mountain.style.top = -value * .6 + 395 + 'px';
 				let x = scrollY;
 				
