@@ -38,7 +38,7 @@ window.addEventListener('load', function () {
 				
 				if(x < 300) {
 					pond.style.top = -value * .3 +  300 + 'px';
-					mountain.style.top = -value * .6 + 395 + 'px';
+					mountain.style.top = -value * .6 + 405 + 'px';
 				}else if (x < 400){
 					
 				} else {
