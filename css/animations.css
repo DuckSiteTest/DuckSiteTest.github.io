@@ -44,22 +44,22 @@
 
 @keyframes rightToLeft {
 	0% {
-		left: 10%;
+		right: -100px;
 		opacity: .05;
 	}
 	100% {
-		left: 5%;
+		right: 0px;
 		opacity: 1;
 	}
 }
 
 @keyframes leftToRight {
 	0% {
-		left: 0%;
+		left: -100px;
 		opacity: .05;
 	}
 	100% {
-		left: 5%;
+		left: 0px;
 		opacity: 1;
 	}
 }
@@ -289,7 +289,7 @@
 
 .scrolled.rightToLeft {
 	position: relative;
-	animation: rightToLeft 2s;
+	animation: rightToLeft 3s;
 	animation-name: rightToLeft;
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
@@ -298,7 +298,7 @@
 
 .scrolled.leftToRight {
 	position: relative;
-	animation: leftToRight 2s;
+	animation: leftToRight 3s;
 	animation-name: leftToRight;
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
@@ -427,7 +427,7 @@
 @media (max-width: 543px) {
 	.scrolled.rightToLeft {
 		position: relative;
-		animation: rightToLeft .5s;
+		animation: rightToLeft 2s;
 		animation-name: rightToLeft;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
@@ -436,7 +436,7 @@
 	
 	.scrolled.leftToRight {
 		position: relative;
-		animation: leftToRight .5s;
+		animation: leftToRight 2s;
 		animation-name: leftToRight;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;

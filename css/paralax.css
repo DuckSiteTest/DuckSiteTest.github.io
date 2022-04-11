@@ -204,7 +204,16 @@ section {
 
 }
 
+.duck-img {
+	position: relative;
+}
+
 @media (max-width: 543px) { 
+
+
+	.duck-img-invertY{
+		transform: rotateY(180deg);
+	}
 
 	#title-logo {
 		object-fit: contain !important;
