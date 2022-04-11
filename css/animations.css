@@ -7,7 +7,7 @@
 	
 
 	100% {
-		transform: scale(1.2);
+		transform: scale(1);
 	}
 
 }
@@ -319,7 +319,7 @@
 	animation-duration: 3s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;
-	animation-delay: .5s;
+	animation-delay: 0s;
 }
 
 .smallToBig {
