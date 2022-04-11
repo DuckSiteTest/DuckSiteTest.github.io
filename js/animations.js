@@ -26,9 +26,9 @@ const elementInView = (el, scrollOffset) => {
     element.classList.add("scrolled");
   };
 
-  const hideScrollElement = (element) => {
-    element.classList.remove('scrolled');
-  }
+  // const hideScrollElement = (element) => {
+  //   element.classList.remove('scrolled');
+  // }
 
   const handleScrollAnimation = () => {
       document.querySelectorAll(".js-scroll").forEach((el) => {
@@ -38,6 +38,17 @@ const elementInView = (el, scrollOffset) => {
         // hideScrollElement(el);
       }
   })
+
+  document.querySelectorAll(".js-scroll2").forEach((el) => {
+    if (elementInView(el, 100)) {
+      displayScrollElement(el);
+    } else {
+        // hideScrollElement(el);
+      }
+  })
+
+
+  
 }
 
   window.addEventListener('scroll', () => {

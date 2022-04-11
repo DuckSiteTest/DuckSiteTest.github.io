@@ -1,29 +1,71 @@
+ 
 window.addEventListener('load', function () {
+
+	
 
 
 	if (document.body.classList.contains("homePage")) {
-
+		let screenWidth = window.innerWidth;
 		let bg = document.getElementById("bg");
 		let moon = document.getElementById("moon");
 		let mountain = document.getElementById("mountain");
-		let road = document.getElementById("road");
-		let text = document.getElementById("text");
-		let text2 = document.getElementById("text2");
+		let pond = document.getElementById("pond");
+		let title = document.getElementById("text");
+	
 
 
 		window.addEventListener('scroll', function () {
-			var value = window.scrollY;
+			let value = window.scrollY;
 
-			bg.style.top = -value * .75 + 'px';
-			moon.style.left = value * 1.5 + 'px';
-			moon.style.top = value * 1.5 + 'px';
-			mountain.style.top = 85 + 'px';
-			road.style.top = value * .15 + 'px';
-			text.style.top = value + 50 * 1 + 'px';
+			// desktop paralax
+			if( screenWidth > 545 ) {
+				bg.style.top = -value * .75 + 'px';
+				moon.style.left = value * 1.5 + 'px';
+				moon.style.top = value * 1.5 + 'px';
+				mountain.style.top = 85 + 'px';
+				pond.style.top = value * .15 + 'px';
+				title.style.top = value + 110 + 'px';
+				
+				// mobile paralax
+			} else if (screenWidth <= 545 ) {
+			
+				bg.style.top = -value * .05 + 'px';
+				moon.style.left = value * 1.5 + 'px';
+				moon.style.top = value * 1.5 + 'px';
+				title.style.top = value+ 110 + 'px';
+				// mountain.style.top = -value * .6 + 395 + 'px';
+				let x = scrollY;
+				
+				if(x < 300) {
+					pond.style.top = -value * .3 +  300 + 'px';
+					mountain.style.top = -value * .6 + 395 + 'px';
+				}else if (x < 400){
+					
+				} else {
+					
+				}
+				
+
+				
+				 
+			}
+
+			
 		
 
 
 		});
+
+		
+	
+
+
+
+
+
+
+
+
 
 	} else if (document.body.classList.contains("UtilityPage")) {
 

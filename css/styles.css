@@ -885,7 +885,9 @@ footer div p {
 	}
 
 }
-/* Small devices (landscape phones, 544px and up) */
+
+
+/* Small devices (landscape phones, 544px and lower) */
 
 @media (max-width: 543px) {
 
@@ -899,18 +901,7 @@ footer div p {
 	}
 	/* INDEX PAGE MOBILE - START */
 	/* Reduce size of main logo for mobile  */
-	#title-logo {
-		width: 325px !important;
-	}
-	#mountain {
-		height: 795px !important;
-	}
-	#moon {
-		height: 321px !important;
-	}
-	#bg {
-		height: 575px !important;
-	}
+
 	.nav-logos-container {
 		text-align: center;
 		/* margin-bottom: 20px; */

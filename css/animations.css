@@ -1,3 +1,32 @@
+
+
+@keyframes skyLoadIn{
+	0% {
+		opacity: 0;
+	}
+
+	75%{
+		opacity: .5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+
+}
+
+
+@keyframes bottomUp {
+	0% {
+		bottom: -10rem;
+		opacity: .05;
+	}
+	100% {
+		bottom: 0rem;
+		opacity: 1;
+	}
+}
+
 @keyframes rightToLeft {
 	0% {
 		left: 10%;
@@ -222,6 +251,18 @@
 
 /* any element with class .js-scroll is hidden until the class .scrolled is added to it  */
 
+
+
+.scrolled.bottomUp {
+	
+	animation: bottomUp 2s;
+	animation-name: bottomUp;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
+}
+
+
 .js-scroll {
 	opacity: 0;
 	transition: opacity 3s;
@@ -231,7 +272,7 @@
 	opacity: 1;
 }
 
-.scrolled.right-to-left {
+.scrolled.rightToLeft {
 	position: relative;
 	animation: rightToLeft 2s;
 	animation-name: rightToLeft;
@@ -240,7 +281,7 @@
 	animation-fill-mode: forwards;
 }
 
-.scrolled.left-to-right {
+.scrolled.leftToRight {
 	position: relative;
 	animation: leftToRight 2s;
 	animation-name: leftToRight;
@@ -255,6 +296,16 @@
 	position: relative;
 }
 
+
+
+.skyLoadIn{
+	animation: skyLoadIn;
+	animation-name: skyLoadIn;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+}
 
 
 .firstRightToLeftImage {
@@ -349,7 +400,7 @@
 
 
 @media (max-width: 543px) {
-	.scrolled.right-to-left {
+	.scrolled.rightToLeft {
 		position: relative;
 		animation: rightToLeft .5s;
 		animation-name: rightToLeft;
@@ -358,7 +409,7 @@
 		animation-fill-mode: forwards;
 	}
 	
-	.scrolled.left-to-right {
+	.scrolled.leftToRight {
 		position: relative;
 		animation: leftToRight .5s;
 		animation-name: leftToRight;
@@ -366,5 +417,8 @@
 		animation-timing-function: linear;
 		animation-fill-mode: forwards;
 	}
+
+
+
 
 }
