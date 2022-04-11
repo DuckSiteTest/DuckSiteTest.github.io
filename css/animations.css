@@ -42,6 +42,19 @@
 	}
 }
 
+
+
+
+@-webkit-keyframes rightToLeft {
+	0% {
+		-webkit-right: -100px;
+		-webkit-opacity: .05;
+	}
+	100% {
+		-webkit-right: 0px;
+		-webkit-opacity: 1;
+	}
+}
 @keyframes rightToLeft {
 	0% {
 		right: -100px;
@@ -52,6 +65,7 @@
 		opacity: 1;
 	}
 }
+
 
 
 @-webkit-keyframes leftToRight {
@@ -76,6 +90,8 @@
 		opacity: 1;
 	}
 }
+
+
 
 @keyframes moveSlideshow {
 	0% {
@@ -438,11 +454,20 @@
 
 
 @media (max-width: 543px) {
+
+
+
+.js-scroll {
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+
 	.scrolled.rightToLeft {
 		position: relative;
 		animation: rightToLeft 2s;
 		animation-name: rightToLeft;
-		animation-iteration-count: 3;
+		animation-iteration-count: 1;
 		animation-timing-function: linear;
 		animation-fill-mode: forwards;
 	}
@@ -451,7 +476,7 @@
 		position: relative;
 		animation: leftToRight 2s;
 		animation-name: leftToRight;
-		animation-iteration-count: 2;
+		animation-iteration-count: 1;
 		animation-timing-function: linear;
 		animation-fill-mode: forwards;
 	}
