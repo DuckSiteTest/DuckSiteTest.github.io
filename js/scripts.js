@@ -19,12 +19,24 @@ window.addEventListener('load', function () {
 
 			// desktop paralax
 			if( screenWidth > 545 ) {
+
+				let x = scrollY;
+
 				bg.style.top = -value * .75 + 'px';
 				moon.style.left = value * 1.5 + 'px';
 				moon.style.top = value * 1.5 + 'px';
-				mountain.style.top = 85 + 'px';
-				pond.style.top = value * .15 + 'px';
+				
+		
 				title.style.top = value + 110 + 'px';
+
+				if(x < 300) {
+					pond.style.top = -value * 1 +  300 + 'px';
+					mountain.style.top = -value * 1 + 385 + 'px';
+				}else if (x < 400){
+					
+				} else {
+					
+				}
 				
 				// mobile paralax
 			} else if (screenWidth <= 545 ) {

@@ -49,7 +49,9 @@ section img {
 }
 
 #mountain {
-	top: 85px;
+	
+	top: 385px;
+	object-fit: contain;
 	
 }
 
@@ -201,6 +203,7 @@ section img {
 section {
 	
 	background-image: linear-gradient( #002145 -50%, #2a9eb6 );
+	height: 150vh;
 
 }
 
