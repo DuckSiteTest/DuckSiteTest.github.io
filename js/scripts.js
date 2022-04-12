@@ -40,28 +40,29 @@ window.addEventListener('load', function () {
 				
 				// mobile paralax
 			} else if (screenWidth <= 545 ) {
-
-				scrollPx = value + 'px';
+				let x = scrollY;
+				let scrollPx = value + 'px';
+				let bgScrollPx = -value * .15 + 'px';
 			
-				bg.style.top = -value * .05 + 'px';
 
-			
+
+
+				// bg.style.top = -value * .15 + 'px';
+
+
+				$('#bg').css('transform' , `translate(0px, ${bgScrollPx})`);
 				// moon.style.left = value * 1 - 199 + 'px';
-				// $('#moon').css('transform' , `translate(0px, ${scrollPx})`);
-				 $('#moon').css('transform' , `translate(${scrollPx}, ${scrollPx})`);
 				//  moon.style.top = value * 1 - 199 + 'px';
+				 $('#moon').css('transform' , `translate(${scrollPx}, ${scrollPx})`);
+				
 
 
 
 				// title.style.top = value + 110 + 'px';
-				
-
-				// $('#text').css(`'transform, translate(0px, ${y})'`)
 				$('#text').css('transform' , `translate(0px, ${scrollPx})`);
 				
+			
 				
-				// mountain.style.top = -value * .6 + 395 + 'px';
-				let x = scrollY;
 				
 				if(x < 300) {
 					let mountainY = -value * .6  + 'px';
