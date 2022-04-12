@@ -17,6 +17,8 @@ section {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	background-image: linear-gradient( #2a9eb6, #1e283a );
+    
 }
 
 section img {
@@ -27,6 +29,11 @@ section img {
 	width: 100%;
 	object-fit: cover;
 	pointer-events: none;
+}
+
+#bg {
+	object-fit: cover;
+    height: 120%;
 }
 
 #title-logo {
@@ -45,19 +52,28 @@ section img {
 
 #pond {
 	z-index: 2;
+	object-fit: contain;
+	opacity: 0;
 
 }
 
 #mountain {
-	
-	top: 385px;
+	opacity: 0;
 	object-fit: contain;
 	
 }
 
 #moon {
-	/* top: 30px; */
-	/* transform: scale(1.45); */
+	object-fit: contain;
+	/* left: -199px;
+	top: -199px ; */
+	transform: scale(1);
+	scroll-behavior: smooth;
+	transition: transform .3s ease-out;
+	height: 60%;
+	width: 100%;
+    top: 70px;
+    left: -800px;
 }
 
 .parallax {
@@ -229,51 +245,55 @@ section {
 
 
 
-#text {
-	max-width: 330px;
-	margin: auto;
-	position: relative;
-	top: 110px;
-	scroll-behavior: smooth;
-	transition: transform .3s ease-out;
-}
+	#text {
+		max-width: 330px;
+		margin: auto;
+		position: relative;
+		top: 110px;
+		scroll-behavior: smooth;
+		transition: transform .3s ease-out;
+	}
 
-#bg {
-	
-}
-
-
-#pond {
-	z-index: 2;
-    object-fit: contain;
-	top: 300px;
-	scroll-behavior: smooth;
-	transition: transform .3s ease-out;
-}
-
-#mountain {
-	top: 405px;
-	object-fit: contain;
-	scroll-behavior: smooth;
-	transition: transform .3s ease-out;
-}
-
-#moon {
-
-	object-fit: contain;
-    left: -199px;
-    top: -199px ;
-	transform: scale(1);
-	scroll-behavior: smooth;
-	transition: transform .3s ease-out;
-}
+	#bg {
+		height: 100%;
+	}
 
 
-section {
-	height: 600px;
-	background-image: linear-gradient(   #2a9eb6,  #1e283a );
-	margin-top: 70px;
-}
+	#pond {
+		z-index: 2;
+		object-fit: contain;
+		top: 300px;
+		scroll-behavior: smooth;
+		transition: transform .3s ease-out;
+		opacity: 1;
+	}
+
+	#mountain {
+		top: 405px;
+		object-fit: contain;
+		scroll-behavior: smooth;
+		transition: transform .3s ease-out;
+		opacity: 1;
+	}
+
+	#moon {
+
+		object-fit: contain;
+		left: -199px;
+		top: -199px ;
+		transform: scale(1);
+		scroll-behavior: smooth;
+		transition: transform .3s ease-out;
+		height: 100%;
+		
+	}
+
+
+	section {
+		height: 600px;
+		background-image: linear-gradient(   #2a9eb6,  #1e283a );
+		margin-top: 70px;
+	}
 
 
 }

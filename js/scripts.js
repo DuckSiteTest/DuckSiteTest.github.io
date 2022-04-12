@@ -11,7 +11,18 @@ window.addEventListener('load', function () {
 		let mountain = document.getElementById("mountain");
 		let pond = document.getElementById("pond");
 		let title = document.getElementById("text");
-	
+
+		let sectionHeightPx = document.querySelector('section').clientHeight;
+		let halfSectionHeight = sectionHeightPx *.5;
+		if( screenWidth > 545 ) {
+			$('#pond').css('transform' , `translate(0px , ${halfSectionHeight} )`);
+
+			//hide images untill fully loaded 
+			mountain.style.opacity = 0;
+			pond.style.opacity = 0;
+			mountain.style.top = halfSectionHeight * 1.25 + 'px';
+			pond.style.top = halfSectionHeight + 'px';
+		}
 
 
 		window.addEventListener('scroll', function () {
@@ -19,29 +30,40 @@ window.addEventListener('load', function () {
 
 			// desktop paralax
 			if( screenWidth > 545 ) {
-
+				mountain.style.opacity = 1;
+				pond.style.opacity = 1;
 				let x = scrollY;
+				let scrollPx = value + 'px';
+				let halfscrollPx = value * .5 + 'px' ;
+				let mtnValueY = -value * .8 + 'px';
 
-				bg.style.top = -value * .75 + 'px';
-				moon.style.left = value * 1.5 + 'px';
-				moon.style.top = value * 1.5 + 'px';
+				// bg.style.top = -value * .75 + 'px';
+				$('#bg').css('transform' , `translate(0px , ${mtnValueY} )`);
+				
+				$('#moon').css('transform' , `translate(${scrollPx}, ${halfscrollPx})`);
 				
 		
 				title.style.top = value + 110 + 'px';
 
-				if(x < 300) {
-					pond.style.top = -value * 1 +  300 + 'px';
-					mountain.style.top = -value * 1 + 385 + 'px';
-				}else if (x < 400){
-					
+				if(x > 300 && x < 650) {
+					value = window.scrollY - 300;
+					let mountainY = -value  * 1.45 + 'px';
+					let pondY = -value * 1.1 + 'px';
+					// pond.style.top = -value * 1 +  300 + 'px';
+					// mountain.style.top = -value * 1 + 385 + 'px';
+
+					$('#pond').css('transform' , `translate(0px , ${pondY} )`);
+					$('#mountain').css('transform' , `translate(0px, ${mountainY}  )`);
+				}else if (x > 700){
+					$('#bg').css('transform' , `translate(0px , 0px )`);
 				} else {
 					
 				}
 				
 				// mobile paralax
 			} else if (screenWidth <= 545 ) {
-				let x = scrollY;
-				let scrollPx = value + 'px';
+				 x = scrollY;
+				 scrollPx = value + 'px';
 				let bgScrollPx = -value * .15 + 'px';
 			
 
@@ -65,8 +87,8 @@ window.addEventListener('load', function () {
 				
 				
 				if(x < 300) {
-					let mountainY = -value * .6  + 'px';
-					let pondY = -value * .3 + 'px';
+					 mountainY = -value * .6  + 'px';
+					 pondY = -value * .3 + 'px';
 
 					$('#pond').css('transform' , `translate(0px , ${pondY} )`);
 					$('#mountain').css('transform' , `translate(0px, ${mountainY}  )`);
