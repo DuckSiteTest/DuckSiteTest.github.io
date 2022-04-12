@@ -246,12 +246,16 @@ section {
 #pond {
 	z-index: 2;
     object-fit: contain;
-    top: 300px;
+	top: 300px;
+	scroll-behavior: smooth;
+	transition: transform .3s ease-out;
 }
 
 #mountain {
 	top: 405px;
 	object-fit: contain;
+	scroll-behavior: smooth;
+	transition: transform .3s ease-out;
 }
 
 #moon {
@@ -259,7 +263,9 @@ section {
 	object-fit: contain;
     left: -199px;
     top: -199px ;
-    transform: scale(1);
+	transform: scale(1);
+	scroll-behavior: smooth;
+	transition: transform .3s ease-out;
 }
 
 

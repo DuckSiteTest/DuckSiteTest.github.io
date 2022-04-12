@@ -40,23 +40,37 @@ window.addEventListener('load', function () {
 				
 				// mobile paralax
 			} else if (screenWidth <= 545 ) {
+
+				scrollPx = value + 'px';
 			
 				bg.style.top = -value * .05 + 'px';
-				moon.style.left = value * 1 - 199 + 'px';
-				 moon.style.top = value * 1 - 199 + 'px';
+
+			
+				// moon.style.left = value * 1 - 199 + 'px';
+				// $('#moon').css('transform' , `translate(0px, ${scrollPx})`);
+				 $('#moon').css('transform' , `translate(${scrollPx}, ${scrollPx})`);
+				//  moon.style.top = value * 1 - 199 + 'px';
+
+
+
 				// title.style.top = value + 110 + 'px';
-				y = value + 'px';
+				
 
 				// $('#text').css(`'transform, translate(0px, ${y})'`)
-				$('#text').css('transform' , `translate(0px, ${y})`)
+				$('#text').css('transform' , `translate(0px, ${scrollPx})`);
 				
 				
 				// mountain.style.top = -value * .6 + 395 + 'px';
 				let x = scrollY;
 				
 				if(x < 300) {
-					pond.style.top = -value * .3 +  300 + 'px';
-					mountain.style.top = -value * .6 + 405 + 'px';
+					let mountainY = -value * .6  + 'px';
+					let pondY = -value * .3 + 'px';
+
+					$('#pond').css('transform' , `translate(0px , ${pondY} )`);
+					$('#mountain').css('transform' , `translate(0px, ${mountainY}  )`);
+					// pond.style.top = -value * .3 +  300 + 'px';
+					// mountain.style.top = -value * .6 + 405 + 'px';
 				}else if (x < 400){
 					
 				} else {
