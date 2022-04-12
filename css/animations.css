@@ -69,6 +69,26 @@
 
 }
 
+@keyframes fadeIn{
+	0% {
+		opacity: 0;
+		
+	}
+
+	75%{
+		opacity: .5;
+	
+	}
+
+	100% {
+		opacity: 1;
+		
+	}
+
+}
+
+
+
 
 @keyframes bottomUp {
 	0% {
@@ -328,6 +348,15 @@
 /* any element with class .js-scroll is hidden until the class .scrolled is added to it  */
 
 
+.fadeIn{
+
+
+	animation: fadeIn 1s;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
 
 .scrolled.bottomUp {
 	
@@ -342,10 +371,12 @@
 .js-scroll {
 	opacity: 0;
 	transition: opacity 3s;
+	
 }
 
 .js-scroll.scrolled {
 	opacity: 1;
+	
 }
 
 .scrolled.rightToLeft {
@@ -355,6 +386,7 @@
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
+	transition: all ease .75s;
 }
 
 .scrolled.leftToRight {
@@ -364,6 +396,7 @@
 	animation-iteration-count: 1;
 	animation-timing-function: linear;
 	animation-fill-mode: forwards;
+	transition: all ease .75s;
 }
 
 .images {
