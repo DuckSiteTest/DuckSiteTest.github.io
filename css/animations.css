@@ -43,10 +43,10 @@
 	100% {
 		opacity: 1;
 		transform: scale(1);
-		height: 60%;
+		height: 50%;
 		width: 100%;
 		top: 70px;
-		left: -800px;
+		left: -950px;
 	}
 
 }
