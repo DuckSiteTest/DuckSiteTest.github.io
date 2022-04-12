@@ -44,7 +44,13 @@ window.addEventListener('load', function () {
 				bg.style.top = -value * .05 + 'px';
 				moon.style.left = value * 1 - 199 + 'px';
 				 moon.style.top = value * 1 - 199 + 'px';
-				title.style.top = value + 110 + 'px';
+				// title.style.top = value + 110 + 'px';
+				y = value + 'px';
+
+				// $('#text').css(`'transform, translate(0px, ${y})'`)
+				$('#text').css('transform' , `translate(0px, ${y})`)
+				
+				
 				// mountain.style.top = -value * .6 + 395 + 'px';
 				let x = scrollY;
 				

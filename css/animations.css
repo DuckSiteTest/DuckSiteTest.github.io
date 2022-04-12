@@ -69,11 +69,11 @@
 
 @keyframes bottomUp {
 	0% {
-		bottom: -10rem;
-		opacity: .05;
+		bottom: -100px;
+		opacity: .2;
 	}
 	100% {
-		bottom: 0rem;
+		bottom: 0px;
 		opacity: 1;
 	}
 }
