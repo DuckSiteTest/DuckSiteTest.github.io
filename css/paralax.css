@@ -251,7 +251,7 @@ section {
 		position: relative;
 		top: 110px;
 		scroll-behavior: smooth;
-		transition: transform .3s linear;
+		transition: transform .3s ease-out;
 		/* transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
 	}
 
