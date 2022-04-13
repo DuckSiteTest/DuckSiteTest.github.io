@@ -251,8 +251,8 @@ section {
 		position: relative;
 		top: 110px;
 		scroll-behavior: smooth;
-		/* transition: transform .1s ease-out; */
-		transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+		transition: transform .4s ease-out;
+		/* transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68); */
 	}
 
 	#bg {
