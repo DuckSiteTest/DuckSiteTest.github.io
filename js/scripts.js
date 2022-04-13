@@ -63,9 +63,9 @@ window.addEventListener('load', function () {
 				// mobile paralax
 			} else if (screenWidth <= 545 ) {
 				
-				 x = scrollY;
-				   console.log(x)
-				 scrollPx = value + 'px';
+				x = scrollY;
+				console.log(x)
+				scrollPx = value + 'px';
 				let bgScrollPx = -value * .15 + 'px';
 			
 
@@ -84,7 +84,7 @@ window.addEventListener('load', function () {
 
 				// title.style.top = value + 110 + 'px';
 				
-					$('#text').css('transform' , `translate(0px, ${scrollPx})`);
+			     $('#text').css('transform' , `translate(0px, ${scrollPx})`);
 				
 				
 				
