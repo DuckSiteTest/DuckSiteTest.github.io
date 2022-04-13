@@ -62,7 +62,9 @@ window.addEventListener('load', function () {
 				
 				// mobile paralax
 			} else if (screenWidth <= 545 ) {
+				
 				 x = scrollY;
+				   console.log(x)
 				 scrollPx = value + 'px';
 				let bgScrollPx = -value * .15 + 'px';
 			
