@@ -251,7 +251,7 @@ section {
 		position: relative;
 		top: 110px;
 		scroll-behavior: smooth;
-		transition: transform .3s ease-out;
+		transition: transform .1s ease-out;
 	}
 
 	#bg {
