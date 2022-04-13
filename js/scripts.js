@@ -83,7 +83,10 @@ window.addEventListener('load', function () {
 
 
 				// title.style.top = value + 110 + 'px';
-				$('#text').css('transform' , `translate(0px, ${scrollPx})`);
+				
+					$('#text').css('transform' , `translate(0px, ${scrollPx})`);
+				
+				
 				
 			
 				
