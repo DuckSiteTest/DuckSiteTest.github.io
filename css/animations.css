@@ -89,19 +89,24 @@
 
 @keyframes flyAway{
 	0% {
-		transform: rotateY(180deg);
-		transform: scale(1);
+		
 		opacity: 1;
+		transform: rotateY(180deg);
+		
 
 	}
+
+
+
 
 	
 
 	100%{
 		
 		opacity: 0;
-		transform: scale(.2);
-		transform: translate(800px, -800px );
+		transform: translate(-800px, -800px ) scale(1) rotateY(180deg);
+
+		
 
 	}
 }
@@ -366,7 +371,7 @@
 
 
 .flyAway{
-	animation: flyAway 5s;
+	animation: flyAway 3s;
 	animation-name: flyAway;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
@@ -568,7 +573,7 @@
 
 	.scrolled.rightToLeft {
 		position: relative;
-		animation: rightToLeft 2s;
+		animation: rightToLeft 1s;
 		animation-name: rightToLeft;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
@@ -577,7 +582,7 @@
 	
 	.scrolled.leftToRight {
 		position: relative;
-		animation: leftToRight 2s;
+		animation: leftToRight 1s;
 		animation-name: leftToRight;
 		animation-iteration-count: 1;
 		animation-timing-function: linear;
@@ -617,6 +622,16 @@
 		top: -199px ;
 	}
 
+}
+
+
+.scrolled.bottomUp {
+	
+	animation: bottomUp 1s;
+	animation-name: bottomUp;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: both;
 }
 
 

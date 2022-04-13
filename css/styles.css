@@ -800,6 +800,11 @@ footer div p {
 	cursor: cell;
 }
 
+#duckHunt2:hover{
+	cursor: cell;
+	
+}
+
 
 #duckHuntOG:hover{
 	cursor: crosshair;
@@ -1039,9 +1044,19 @@ footer div p {
 		
 		border-bottom: 5rem solid #FEBA00;
 	}
+
+
+
+
+	.touchMeNot img {
+		height: 70px;
+		width: 70px;
+		z-index: 999999;
+	}
 }
 
 @media (min-width: 544px) {
+
 
     .mobile-parallax-replacement-img{
         display: none;

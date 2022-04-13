@@ -35,7 +35,19 @@ window.addEventListener('load', function () {
 			$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
 				setTimeout(()=>{
 					animateDiv();    
-				}, 2500)
+				}, 200)
+				    
+			});
+			
+		}
+
+		if($("#duckHunt2").hasClass("game-start")){
+
+			var newq = makeNewPosition();
+			$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
+				setTimeout(()=>{
+					animateDiv();    
+				}, 200)
 				    
 			});
 			
@@ -44,9 +56,9 @@ window.addEventListener('load', function () {
 	};
 
 
-
-
 	$('#duckHunt').on("click", function(){
+
+		console.log("taped")
 		
 		//game hasn't started
 		if($("#duckHunt").hasClass("game-won")){
@@ -72,11 +84,13 @@ window.addEventListener('load', function () {
 		//swap evader image, animate death 
 
 		$("#duckHunt").removeClass("game-start");
-
+		$("#duckHunt2").removeClass("game-start");
+		
 		//.... death 
 
 
 		$("#duckHunt").addClass("game-won");
+		$("#duckHunt2").addClass("game-won");
 		
 		$("#duckHuntOG").addClass("flyAway");
 
@@ -88,6 +102,52 @@ window.addEventListener('load', function () {
 	
 	
 	})
+
+
+	$('#duckHunt2').on("click", function(){
+
+		console.log("clickec")
+		
+		//game hasn't started
+		if($("#duckHunt2").hasClass("game-won")){
+			//stop click events
+			$("#duckHunt2").addClass("game-start");
+			$("#duckHuntOG").removeClass("flyAway");
+			animateDiv();
+			
+		} else if ($("#duckHunt2").hasClass("game-start")) {
+			//code here that each click spawns a div gunshot and sound 
+			
+		} else {
+			$("#duckHunt2").addClass("game-start");
+			$('#evader').css("display", 'block');
+			animateDiv();
+		}
+
+	
+	})
+
+	// $('#duckHuntOG').on('click' , function(){
+
+	// 	//swap evader image, animate death 
+
+	// 	$("#duckHunt").removeClass("game-start");
+
+	// 	//.... death 
+
+
+	// 	$("#duckHunt").addClass("game-won");
+		
+	// 	$("#duckHuntOG").addClass("flyAway");
+
+
+	
+
+
+		
+	
+	
+	// })
 
 
 
