@@ -402,18 +402,18 @@ h1 {
 	box-shadow: #feba00 0px 0px 39px;
 	transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
 }
-
+/* 
 .visited {
-	background-color: grey !important;
-	-webkit-transition: all ease 1s;
-	-moz-transition: all ease 1s;
-	transition: all ease 1s;
+	transform: rotate(360deg);
+	-webkit-transition: all ease 2s;
+	-moz-transition: all ease 2s;
+	transition: all ease 2s;
 
 }
 
 
 .visited-again {
-	
+	transform: rotate(720deg);
 	-webkit-transition: all ease 1s;
 	-moz-transition: all ease 1s;
 	transition: all ease 1s;
@@ -422,33 +422,33 @@ h1 {
 
 
 .warning {
-	
+	transform: rotate3d(1, 1, 1, 720deg);
 	-webkit-transition: all ease 1s;
 	-moz-transition: all ease 1s;
 	transition: all ease 1s;
 
-}
+} */
 
-.done{
+/* .done{
 
 	-webkit-transition: all ease 1s;
 	-moz-transition: all ease 1s;
 	transition: all ease 1s;
-}
+} */
 
 
 .touchMeNot{
     position:fixed;
    font-size: 5rem;
-    height:200px;
-	width:200px;
+    height:100px;
+	width:100px;
 	z-index: 999999;
 }
 
 .touchMeNot img{
 
-    height:200px;
-	width:200px;
+    height:100px;
+	width:100px;
 	z-index: 999999;
 }
 
@@ -793,6 +793,18 @@ footer div p {
 	box-shadow: #feba00 0px 0px 39px;
 	transition: all 1s ease-in-out;
 }
+
+
+
+#duckHunt:hover{
+	cursor: cell;
+}
+
+
+#duckHuntOG:hover{
+	cursor: crosshair;
+}
+
 
 
 

@@ -1,10 +1,104 @@
  
 window.addEventListener('load', function () {
 
+
+	//grab duck class list 
+	// let duckHuntDuckClassArr =  Array.from(document.getElementById("duckHuntOG").classList);
+
+	// function checkFlying(){
+	// 	duckHuntDuckClassArr =  Array.from(document.getElementById("duckHuntOG").classList);
+	// 	if(duckHuntDuckClassArr.includes("flying")){
+			
+	// 	} 
+
+	// }
+		
+	//duckHunt Game
+
+	function makeNewPosition(){
+		
+		// Get viewport dimensions (remove the dimension of the div)
+		var h = $(window).height() - 50;
+		var w = $(window).width() - 50;
+		
+		var nh = Math.floor(Math.random() * h);
+		var nw = Math.floor(Math.random() * w);
+		
+		return [nh,nw];    
+		
+	}
+	function animateDiv(){
+
+		if($("#duckHunt").hasClass("game-start")){
+
+			var newq = makeNewPosition();
+			$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
+				setTimeout(()=>{
+					animateDiv();    
+				}, 2500)
+				    
+			});
+			
+		}
+	
+	};
+
+
+
+
+	$('#duckHunt').on("click", function(){
+		
+		//game hasn't started
+		if($("#duckHunt").hasClass("game-won")){
+			//stop click events
+			$("#duckHunt").addClass("game-start");
+			$("#duckHuntOG").removeClass("flyAway");
+			animateDiv();
+			
+		} else if ($("#duckHunt").hasClass("game-start")) {
+			//code here that each click spawns a div gunshot and sound 
+			
+		} else {
+			$("#duckHunt").addClass("game-start");
+			$('#evader').css("display", 'block');
+			animateDiv();
+		}
+
+	
+	})
+
+	$('#duckHuntOG').on('click' , function(){
+
+		//swap evader image, animate death 
+
+		$("#duckHunt").removeClass("game-start");
+
+		//.... death 
+
+
+		$("#duckHunt").addClass("game-won");
+		
+		$("#duckHuntOG").addClass("flyAway");
+
+
 	
 
 
+		
+	
+	
+	})
+
+
+
 	if (document.body.classList.contains("homePage")) {
+
+
+
+
+
+
+		
 		let screenWidth = window.innerWidth;
 		let bg = document.getElementById("bg");
 		let moon = document.getElementById("moon");
@@ -197,57 +291,17 @@ window.addEventListener('load', function () {
 			
 
 			if(!this.classList.contains("visited")){
+				
 				this.classList.add("visited");
 				this.innerText = 'COMING SOON...';
-			} else if(this.classList.contains("visited") && !this.classList.contains("visited-again")){
-				this.classList.add("visited-again");
-				this.innerText = 'Patience...';
-			} else if(this.classList.contains("visited-again") && !this.classList.contains("warning")){
-				this.classList.add("warning");
-				this.innerText = 'im warning you...';
-			} else if (this.classList.contains("warning") && this.classList.contains("visited-again") && !this.classList.contains("done") ) {
-				this.classList.add("done");
-				this.innerText = 'you ducked up';
-				$('#evader').css("display", 'block');
-				animateDiv();
-				
-			} else {
-				//do nothing
-			}
+			} 
 			
 
 		
 		})
 
-	
+
 		
-		function makeNewPosition(){
-			
-			// Get viewport dimensions (remove the dimension of the div)
-			var h = $(window).height() - 50;
-			var w = $(window).width() - 50;
-			
-			var nh = Math.floor(Math.random() * h);
-			var nw = Math.floor(Math.random() * w);
-			
-			return [nh,nw];    
-			
-		}
-		
-		function animateDiv(){
-			var newq = makeNewPosition();
-			$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
-			  animateDiv();        
-			});
-			
-		};
-
-
-		$('.touchMeNotImg').on('click' , function(){
-			$('.touchMeNot').css('display', "none");
-			alert("you win this round...")
-		})
-
 	
 		
 
