@@ -52,14 +52,14 @@ section img {
 
 #pond {
 	z-index: 2;
-	object-fit: contain;
+	object-fit: cover;
 	opacity: 0;
 
 }
 
 #mountain {
 	opacity: 0;
-	object-fit: contain;
+	object-fit: cover;
 	
 }
 
@@ -219,7 +219,7 @@ section img {
 section {
 	
 	background-image: linear-gradient( #002145 -50%, #2a9eb6 );
-	height: 150vh;
+	height: 100vh;
 
 }
 
@@ -293,7 +293,7 @@ section {
 	section {
 		height: 600px;
 		background-image: linear-gradient(   #2a9eb6,  #1e283a );
-		margin-top: 70px;
+		
 	}
 
 

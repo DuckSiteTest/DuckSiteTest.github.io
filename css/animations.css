@@ -69,6 +69,27 @@
 
 }
 
+
+
+@keyframes mountainLoadIn{
+
+	0% {
+		opacity: 0;
+		top: 800px;
+	}
+
+	75%{
+		opacity: .5;
+	
+	}
+
+	100% {
+		opacity: 1;
+		top: 515px;
+	}
+
+}
+
 @keyframes fadeIn{
 	0% {
 		opacity: 0;
@@ -92,7 +113,7 @@
 		
 		opacity: 1;
 		transform: rotateY(180deg);
-		
+
 
 	}
 
@@ -453,6 +474,15 @@
 .skyLoadIn{
 	animation: skyLoadIn;
 	animation-name: skyLoadIn;
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+}
+
+.mountainLoadIn{
+	animation: mountainLoadIn;
+	animation-name: mountainLoadIn;
 	animation-duration: 3s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: 1;

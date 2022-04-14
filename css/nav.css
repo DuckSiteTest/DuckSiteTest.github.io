@@ -16,7 +16,9 @@
 .navbar {
 	backdrop-filter: blur(15px) saturate(0.5) !important;
 	background-color: transparent !important;
-	background-image: linear-gradient(to top, #1d2020 -3px, rgba(255, 255, 255, 0));
+	/* background-image: linear-gradient(to top, #1d2020 -3px, rgba(255, 255, 255, 0)); */
+
+	background-image: linear-gradient(to top, #1d2020 83px, rgba(255, 255, 255, 0));
 	/* -webkit-mask: linear-gradient(to bottom, #ffffff 5px, rgba(255, 255, 255, 0));
     mask: linear-gradient(to bottom, #ffffff 5px, rgba(255, 255, 255, 0)); */
 }

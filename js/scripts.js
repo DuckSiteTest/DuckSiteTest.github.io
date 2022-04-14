@@ -2,23 +2,11 @@
 window.addEventListener('load', function () {
 
 
-	//grab duck class list 
-	// let duckHuntDuckClassArr =  Array.from(document.getElementById("duckHuntOG").classList);
-
-	// function checkFlying(){
-	// 	duckHuntDuckClassArr =  Array.from(document.getElementById("duckHuntOG").classList);
-	// 	if(duckHuntDuckClassArr.includes("flying")){
-			
-	// 	} 
-
-	// }
-		
-	//duckHunt Game
 
 	function makeNewPosition(){
 		
 		// Get viewport dimensions (remove the dimension of the div)
-		var h = $(window).height() - 50;
+		var h = $(window).height() - 100;
 		var w = $(window).width() - 50;
 		
 		var nh = Math.floor(Math.random() * h);
@@ -29,13 +17,38 @@ window.addEventListener('load', function () {
 	}
 	function animateDiv(){
 
+		// if($("#duckHunt2").hasClass("game-won")){
+
+		// 	var newq = makeNewPosition();
+		// 	$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
+		// 		setTimeout(()=>{
+		// 			animateDiv();    
+		// 		}, 750)
+				    
+		// 	});
+			
+		// }
+
+
+		// if($("#duckHunt").hasClass("game-won")){
+
+		// 	var newq = makeNewPosition();
+		// 	$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
+		// 		setTimeout(()=>{
+		// 			animateDiv();    
+		// 		}, 750)
+				    
+		// 	});
+			
+		// }
+
 		if($("#duckHunt").hasClass("game-start")){
 
 			var newq = makeNewPosition();
 			$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
 				setTimeout(()=>{
 					animateDiv();    
-				}, 200)
+				}, 500)
 				    
 			});
 			
@@ -47,7 +60,7 @@ window.addEventListener('load', function () {
 			$('.touchMeNot').animate({ top: newq[0], left: newq[1] }, function(){
 				setTimeout(()=>{
 					animateDiv();    
-				}, 200)
+				}, 750)
 				    
 			});
 			
@@ -58,19 +71,17 @@ window.addEventListener('load', function () {
 
 	$('#duckHunt').on("click", function(){
 
-		console.log("taped")
 		
 		//game hasn't started
-		if($("#duckHunt").hasClass("game-won")){
-			//stop click events
-			$("#duckHunt").addClass("game-start");
-			$("#duckHuntOG").removeClass("flyAway");
-			animateDiv();
-			
-		} else if ($("#duckHunt").hasClass("game-start")) {
+		if ($("#duckHunt").hasClass("game-start")) {
 			//code here that each click spawns a div gunshot and sound 
+			var audio = document.getElementById("audio");
+			audio.play();
+			
+		
 			
 		} else {
+			$("#evader").removeClass("flyAway");
 			$("#duckHunt").addClass("game-start");
 			$('#evader').css("display", 'block');
 			animateDiv();
@@ -79,8 +90,35 @@ window.addEventListener('load', function () {
 	
 	})
 
-	$('#duckHuntOG').on('click' , function(){
 
+		$('#duckHunt2').on("click", function(){
+
+		
+		//game hasn't started
+		if($("#duckHunt2").hasClass("game-start")){
+		
+		
+
+			var audio = document.getElementById("audio");
+			audio.play();
+			
+		}  else {
+			
+			$("#evader").removeClass("flyAway");
+			$("#duckHunt2").addClass("game-start");
+			$('#evader').css("display", 'block');
+			animateDiv();
+		}
+
+	
+	})
+
+	$('#evader').on('click' , function(){
+
+		var audio2 = document.getElementById("audio2");
+		audio2.play();
+
+		$("#evader").addClass("flyAway");
 		//swap evader image, animate death 
 
 		$("#duckHunt").removeClass("game-start");
@@ -91,72 +129,22 @@ window.addEventListener('load', function () {
 
 		$("#duckHunt").addClass("game-won");
 		$("#duckHunt2").addClass("game-won");
+
 		
-		$("#duckHuntOG").addClass("flyAway");
-
-
 	
-
-
 		
 	
 	
 	})
 
 
-	$('#duckHunt2').on("click", function(){
-
-		console.log("clickec")
-		
-		//game hasn't started
-		if($("#duckHunt2").hasClass("game-won")){
-			//stop click events
-			$("#duckHunt2").addClass("game-start");
-			$("#duckHuntOG").removeClass("flyAway");
-			animateDiv();
-			
-		} else if ($("#duckHunt2").hasClass("game-start")) {
-			//code here that each click spawns a div gunshot and sound 
-			
-		} else {
-			$("#duckHunt2").addClass("game-start");
-			$('#evader').css("display", 'block');
-			animateDiv();
-		}
-
-	
-	})
-
-	// $('#duckHuntOG').on('click' , function(){
-
-	// 	//swap evader image, animate death 
-
-	// 	$("#duckHunt").removeClass("game-start");
-
-	// 	//.... death 
-
-
-	// 	$("#duckHunt").addClass("game-won");
-		
-	// 	$("#duckHuntOG").addClass("flyAway");
 
 
 	
-
-
-		
-	
-	
-	// })
 
 
 
 	if (document.body.classList.contains("homePage")) {
-
-
-
-
-
 
 		
 		let screenWidth = window.innerWidth;
@@ -172,9 +160,10 @@ window.addEventListener('load', function () {
 			$('#pond').css('transform' , `translate(0px , ${halfSectionHeight} )`);
 
 			//hide images untill fully loaded 
-			mountain.style.opacity = 0;
-			pond.style.opacity = 0;
-			mountain.style.top = halfSectionHeight * 1.25 + 'px';
+			 mountain.style.opacity = 1;
+			 pond.style.opacity = 1;
+			// mountain.style.top = halfSectionHeight * 1.25 + 'px';
+			mountain.style.top = 515+ 'px';
 			pond.style.top = halfSectionHeight + 'px';
 		}
 
@@ -182,6 +171,21 @@ window.addEventListener('load', function () {
 		window.addEventListener('scroll', function () {
 			let value = window.scrollY;
 
+
+			// if(value > 500){
+			// 	//end game 
+			// 	$("#evader").addClass("flyAway");
+			// 	//swap evader image, animate death 
+		
+			// 	$("#duckHunt").removeClass("game-start");
+			// 	$("#duckHunt2").removeClass("game-start");
+
+			// 	$("#duckHunt").removeClass("game-won");
+			// 	$("#duckHunt2").removeClass("game-won");
+
+				
+
+			// }
 			// desktop paralax
 			if( screenWidth > 545 ) {
 				mountain.style.opacity = 1;
@@ -194,15 +198,15 @@ window.addEventListener('load', function () {
 				// bg.style.top = -value * .75 + 'px';
 				$('#bg').css('transform' , `translate(0px , ${mtnValueY} )`);
 				
-				$('#moon').css('transform' , `translate(${scrollPx}, ${halfscrollPx})`);
+				// $('#moon').css('transform' , `translate(${scrollPx}, ${halfscrollPx})`);
 				
 		
 				title.style.top = value + 110 + 'px';
 
-				if(x > 300 && x < 650) {
-					value = window.scrollY - 300;
-					let mountainY = -value  * 1.45 + 'px';
-					let pondY = -value * 1.1 + 'px';
+				if( x < 300) {
+					value = window.scrollY ;
+					let mountainY = -value  * 1.5 + 'px';
+					let pondY = -value * 1.2 + 'px';
 					// pond.style.top = -value * 1 +  300 + 'px';
 					// mountain.style.top = -value * 1 + 385 + 'px';
 
@@ -218,7 +222,6 @@ window.addEventListener('load', function () {
 			} else if (screenWidth <= 545 ) {
 				
 				x = scrollY;
-				console.log(x)
 				scrollPx = value + 'px';
 				let bgScrollPx = -value * .15 + 'px';
 			
@@ -231,7 +234,7 @@ window.addEventListener('load', function () {
 				$('#bg').css('transform' , `translate(0px, ${bgScrollPx})`);
 				// moon.style.left = value * 1 - 199 + 'px';
 				//  moon.style.top = value * 1 - 199 + 'px';
-				 $('#moon').css('transform' , `translate(${scrollPx}, ${scrollPx})`);
+				//  $('#moon').css('transform' , `translate(${scrollPx}, ${scrollPx})`);
 				
 
 
@@ -245,9 +248,9 @@ window.addEventListener('load', function () {
 			
 				
 				
-				if(x < 300) {
-					 mountainY = -value * .6  + 'px';
-					 pondY = -value * .3 + 'px';
+				if(x < 200) {
+					 mountainY = -value   + 'px';
+					 pondY = -value * .5 + 'px';
 
 					$('#pond').css('transform' , `translate(0px , ${pondY} )`);
 					$('#mountain').css('transform' , `translate(0px, ${mountainY}  )`);

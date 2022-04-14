@@ -93,8 +93,8 @@ h1 {
 }
 
 .discord-box {
-	background-color: #5c64f4;
-	border: 2px solid #5c64f4;
+	background-color: #feba00 ;
+	border: 2px solid #feba00 ;
 	color: #ffffff;
 	text-shadow: 1px 1px 3px black;
 	-webkit-transition: all ease 1s;
@@ -103,18 +103,18 @@ h1 {
 }
 
 .discord-box:hover {
-	color: #5c64f4;
-	background-color: #ffffff;
+	color: #feba00 ;
+	background-color: #333333;
     transform: translate(0px, -7px);
-	box-shadow: 0 0 10PX #5c64f4;
+	box-shadow: 0 0 10PX #feba00 ;
 	text-shadow: 1px 1px 3px black;
     transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
 }
 
 
 .twitter-box {
-	background-color: #1c9cf4;
-	border: 2px solid #1c9cf4;
+	background-color: #feba00;
+	border: 2px solid #feba00;
 	color: #ffffff;
 	-webkit-transition: all ease 1s;
 	-moz-transition: all ease 1s;
@@ -123,18 +123,18 @@ h1 {
 }
 
 .twitter-box:hover {
-	color: #1c9cf4;
-	background-color: #ffffff;
+	color: #feba00;
+	background-color: #333333;
     transform: translate(0px, -7px);
-	box-shadow: 0 0 10PX #1c9cf4;
+	box-shadow: 0 0 10PX #feba00;
 	transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
 	text-shadow: 1px 1px 3px black;
 }
 
 
 .owner-box {
-	background-color: #fe4815;
-	border: 2px solid #fe4815;
+	background-color: #feba00;
+	border: 2px solid #feba00;
 	color: #ffffff;
 	text-shadow: 1px 1px 3px black;
 	-webkit-transition: all ease 1s;
@@ -143,10 +143,10 @@ h1 {
 }
 
 .owner-box:hover {
-	color: #fe4815;
-	background-color: #ffffff;
+	color: #feba00;
+	background-color: #333333;
     /* transform: translate(0px, -7px); */
-	box-shadow: 0 0 10PX #fe4815;
+	box-shadow: 0 0 10PX #feba00;
 	transition: background-color .2s ease-in-out,color .2s ease-in-out,box-shadow .2s ease-in-out, transform .5s ease-in-out;
 	text-shadow: 1px 1px 3px black;
 }
