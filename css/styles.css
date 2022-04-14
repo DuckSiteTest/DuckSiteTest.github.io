@@ -754,8 +754,8 @@ footer div p {
 .back-btn-container {
 	position: relative;
 	top: -112px;
-	margin-left: 17px;
-	float: left;
+    left: 20px;
+	
 }
 
 
@@ -907,6 +907,7 @@ footer div p {
 /* Small devices (landscape phones, 544px and lower) */
 
 @media (max-width: 543px) {
+
 
 
 
