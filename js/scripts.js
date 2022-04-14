@@ -127,8 +127,7 @@ window.addEventListener('load', function () {
 		//.... death 
 
 
-		$("#duckHunt").addClass("game-won");
-		$("#duckHunt2").addClass("game-won");
+	
 
 		
 	
@@ -168,24 +167,14 @@ window.addEventListener('load', function () {
 		}
 
 
+
+		
+
+
 		window.addEventListener('scroll', function () {
 			let value = window.scrollY;
 
 
-			// if(value > 500){
-			// 	//end game 
-			// 	$("#evader").addClass("flyAway");
-			// 	//swap evader image, animate death 
-		
-			// 	$("#duckHunt").removeClass("game-start");
-			// 	$("#duckHunt2").removeClass("game-start");
-
-			// 	$("#duckHunt").removeClass("game-won");
-			// 	$("#duckHunt2").removeClass("game-won");
-
-				
-
-			// }
 			// desktop paralax
 			if( screenWidth > 545 ) {
 				mountain.style.opacity = 1;
