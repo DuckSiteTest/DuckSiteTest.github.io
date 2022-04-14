@@ -778,13 +778,14 @@ footer div p {
 }
 
 .lore-imgs img {
-	width: 550px;
+	width: 100%;
+
 	border-radius: 25px;
 }
 
 .lore-imgs p {
 	font-size: 24px;
-	width: 520px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -796,6 +797,10 @@ footer div p {
 	transform: scale(1.02);
 	box-shadow: #feba00 0px 0px 39px;
 	transition: all 1s ease-in-out;
+}
+
+.lore-container{
+	text-align: center;
 }
 
 
