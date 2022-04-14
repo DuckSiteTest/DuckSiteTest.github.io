@@ -192,10 +192,10 @@ window.addEventListener('load', function () {
 		
 				title.style.top = value + 110 + 'px';
 
-				if( x < 300) {
+				if( x < 270) {
 					value = window.scrollY ;
 					let mountainY = -value  * 1.5 + 'px';
-					let pondY = -value * 1.2 + 'px';
+					let pondY = -value * 1.4 + 'px';
 					// pond.style.top = -value * 1 +  300 + 'px';
 					// mountain.style.top = -value * 1 + 385 + 'px';
 
