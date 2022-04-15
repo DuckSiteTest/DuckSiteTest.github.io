@@ -331,15 +331,53 @@ h1 {
 }
 
 
+.whitePaper{
+    text-align: center;
+    margin-top: 200px !important;
+    font-size: 45px;
+    color: #feba00;
+    font-family: "Din-Pro-Black";
+    background-color: black;
+    width: 403px;
+    height: 113px;
+    margin: auto;
+    border-radius: 25px;
+}
 
+.whitePaper p {
+	position: relative;
+    top: 20px;
+}
 /* --------   About and Utility Page  --------- */
+#whitePaperMobileDiv{
+    position: absolute;
+    top: 85px;
+    /* margin: auto; */
+    height: 47px;
+    width: 157px;
+    height: 48px;
+    font-size: 16px;
+    text-align: center;
+    /* left: initial; */
+    left: 106px;
+    color: #feba00;
+    font-family: "Din-Pro-Black";
+    background-color: black;
+    border-radius: 25px;
+}
 
+#whitePaperMobileDiv p {
+
+	margin-bottom: 0;
+    position: relative;
+    top: 11px;
+}
 
 .about-container {
 	padding-top: 7rem;
 	background-color: black;
 	color: #ffffff;
-	text-transform: capitalize;
+
 }
 
 .about-row{
@@ -754,7 +792,7 @@ footer div p {
 .back-btn-container {
 	position: relative;
 	top: -112px;
-    left: 20px;
+    left: -47%;
 	
 }
 
@@ -1075,6 +1113,12 @@ footer div p {
 }
 
 @media (max-width: 768px) {
+
+	.back-btn-container {
+		position: relative;
+		top: -112px;
+		left: -47%;
+	}
 
 
 
