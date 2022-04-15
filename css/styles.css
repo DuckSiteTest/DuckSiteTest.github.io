@@ -355,7 +355,9 @@ h1 {
 
 .whitePaper p {
 	position: relative;
-    top: 20px;
+	top: 20px;
+	color: #feba00 !important;
+	text-decoration: none !important;
 }
 /* --------   About and Utility Page  --------- */
 #whitePaperMobileDiv{
