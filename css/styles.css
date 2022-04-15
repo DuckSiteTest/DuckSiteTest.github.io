@@ -341,7 +341,16 @@ h1 {
     width: 403px;
     height: 113px;
     margin: auto;
-    border-radius: 25px;
+	border-radius: 25px;
+	border: 2px solid black;
+}
+
+
+
+.whitePaper:hover{
+   border: 2px solid #feba00;
+  
+	transition:  all .75s ease;
 }
 
 .whitePaper p {
@@ -359,7 +368,7 @@ h1 {
     font-size: 16px;
     text-align: center;
     /* left: initial; */
-    left: 106px;
+    left: 28%;
     color: #feba00;
     font-family: "Din-Pro-Black";
     background-color: black;
