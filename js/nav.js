@@ -1,9 +1,8 @@
-
 window.addEventListener('load', function () {
 
 
  
-  });
+});
 
 
  

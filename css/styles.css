@@ -506,13 +506,26 @@ h1 {
 /* Community Page  */
 
 .community-container {
-	text-align: center;
+	
 	margin: auto;
 
 }
 .community-container p {
 	text-align: center;
 	font-size: 1.2rem;
+}
+
+.community-container h2 {
+	text-align: center;
+
+}
+
+
+
+
+
+.duck-races{
+	text-align: center;
 }
 .last-p{
 	margin-bottom: 0;
@@ -849,7 +862,11 @@ footer div p {
 }
 
 .lore-container{
-	text-align: center;
+	max-width: 960px;
+}
+
+.back-btn-lore {
+	margin-left: 15px;
 }
 
 
@@ -1115,6 +1132,9 @@ footer div p {
 }
 
 @media (min-width: 544px) {
+	.backBtnOffSet{
+		margin-left: -4%;
+	}
 
 
     .mobile-parallax-replacement-img{
